@@ -102,7 +102,7 @@ void main() {
 
     invertedNormals = a_normals;
     invertedNormals.y *= -1.0;
-    
+
     v_normal = u_normalMatrix * invertedNormals;
     v_tangent = u_normalMatrix * a_tangent;
     v_textureCoordinate = a_texCoord;

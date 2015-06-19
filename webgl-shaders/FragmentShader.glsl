@@ -44,7 +44,7 @@ void main() {
     bool lightsEnabled = (u_flatShading == 0.0) && (u_numLights > 0.0 || length(u_ambientLight) > 0.0);
 
     vec3 normal = normalize(v_normal);
-    
+
     if (u_normals.x < 0.0) {
         vec3 tangent = normalize(v_tangent);
         tangent = normalize(tangent - dot(tangent, normal) * normal);
